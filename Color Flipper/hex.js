@@ -1,6 +1,7 @@
 let currentColor = document.querySelector('#current-color');
 let body = document.querySelector('body');
 let hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+const btn = document.querySelector("#click");
 
 function colorChange() {
     let hexCode = "#";
@@ -11,7 +12,4 @@ function colorChange() {
     body.style.backgroundColor = hexCode;
     currentColor.innerText = hexCode;
 }
-const btn = document.querySelector("button");
 btn.addEventListener('click', colorChange);
-
-
